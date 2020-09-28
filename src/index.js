@@ -29,7 +29,7 @@ client.on("message", msg => {
     try {
         client.commands.get(command).execute(msg, options);
     } catch(err) {
-        msg.reply("** Tu sabe ler gld ?**");
+        msg.reply("** Tu sabe ler, gld ?**");
     }
 
 });
