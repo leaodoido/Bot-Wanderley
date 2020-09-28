@@ -1,9 +1,13 @@
-var qnt = 0;
 module.exports = {
     name:"divida",
-    description: "mostrara qual a sua divida com o borracheiro",   
-    execute(msg) {
-	qnt = qnt + 1;
-      	msg.reply(` voce tem uma divida de ${qnt} cus com o paulão`);
+    description: "Mostrara qual a sua divida com o borracheiro paulo",
+    qtd: 0,
+    execute(msg, args) {
+        if (args[0] === "+")
+            this.qtd++;
+        else if (args[0] === "-")
+            this.qtd--;
+        else
+            msg.reply(` voce tem uma divida de ${this.qtd} cus com o paulão`);
     }
 }
