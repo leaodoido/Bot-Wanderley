@@ -24,11 +24,14 @@ client.on("message", msg => {
     const options = msg.content.slice(prefix.length).trim().split(" ");
     const command = options.shift().toLowerCase();
 
-    if(!command.length) {
-        client.commands.get("ajuda").execute(msg, options);
-    } else {
+    console.log
+
+    try {
         client.commands.get(command).execute(msg, options);
+    } catch(err) {
+        msg.reply("** Tu sabe ler gld ?**");
     }
+
 });
 
 client.on("ready", () => 
