@@ -1,8 +1,7 @@
 <center> <h2>Bot wanderley</h2> 
 <h3>O bot que so da ideia errada</h3>
-<video width="480" height="360" autoplay="autoplay" loop>
-<source src="Github/botz.mp4" type="video/mp4">
-</video> </center>
+<img src="Github/botz.gif" height=360 width=480/>
+</center>
 
 <div style="LINE-HEIGHT:0px">
 <h3>Como rodar o bot</h3>
